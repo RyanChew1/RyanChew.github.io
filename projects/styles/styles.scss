@@ -100,14 +100,14 @@ hr{
 }
 .overview-header{
     margin-top: 20px;
-    font-size: clamp(10px, 2.2vh,20rem);
+    font-size: clamp(10px, 2.2v,20rem);
 }
 
 .overview{
     padding:  0 3vw;
     margin-top: 20px;
 
-    font-size: clamp(10px, 1.8vh,20rem);
+    font-size: clamp(10px, 1.2vw,20rem);
 }
 
 .proj-applied{
@@ -139,7 +139,9 @@ hr{
     margin: 20px;
     padding: 90px;
     flex-direction: column;
-    
+    i{
+        font-size: clamp(10px, 2vw,22.5px);
+    }
   }
   
 .overall{
@@ -175,7 +177,7 @@ hr{
 
 .tech-text{
     max-height: 2.5vh;
-    font-size: clamp(10px, 1.7vh,20rem);
+    font-size: clamp(10px, 2vw,22.5px);
 }
 
 .proj-img{
