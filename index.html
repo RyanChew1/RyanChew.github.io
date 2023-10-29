@@ -176,8 +176,9 @@
                                 <p class="skill-desc">
                                     Image Recognition<br>
                                     Image Segmentation<br>
-                                    CNN<br>
-                                    OpenCV<br>
+                                    Object Tracking<br>
+                                    Object Detection<br>
+                                    Generative AI Images<br>
                                 </p>
                             </div>
                         </div>
@@ -296,56 +297,87 @@
             </section>
             <section class="section sec5 contact" id="contact">
                 <!-- CONTACT PAGE -->
-                <h2 class="contact-header">
-                    Get In Touch
-                </h2>
-                <div class="contact-message">
-                    <form method="POST" action="form.php" id="contact-form">
-                        <h2>Send a Message</h2>
-                        <h2 style="color:red;">CONTACT FORM CURRENTLY DOWN</h2>
-                        
-                            <p>
-                                <label>First Name:</label>
-                                <input name="name" type="text"/>
-                            </p>
-                            <p>
-                                <label>Email Address:</label>
-                                <input style="cursor: pointer;" name="email" type="text"/>
-                            </p>
-                            <p>
-                                <label>Message:</label>
-                                <textarea name="message"></textarea>
-                            </p>
-                            <p>
-                                <input type="submit" value="Send"/>
-                            </p>
-                            </form>
-                  </div>
-                <div class="contact-content">
-                    <div class="contact-container">
-                        <div class="email">
-                          <h2 class="email-txt">chewryan0@gmail.com</h2>
-                        </div>
-                        <div class="icons">
-                            <div class="LinkedIn">
-                                    <i class="fas fa-envelope"></i>
-                              </div>
-                            <div class="LinkedIn">
-                                <a href="https://linkedin.com/in/ryan-chew1">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                              </div>
-                              <div class="GitHub">
-                                <a href="https://github.com/RyanChew1">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                              </div>
-                        </div>
-                        
-                  </div>
-
-                  
+                <!-- --------------contact---------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p> <i class="fas fa-phone-square-alt"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/" class="fab fa-facebook"></a>
+                    <a href="https://twitter.com/" class="fab fa-twitter-square"></a>
+                    <a href="https://instagram.com/" class="fab fa-instagram"></a>
+                    <a href="https://linkedin.com/" class="fab fa-linkedin"></a>
                 </div>
+                <!-- <a href="images/def-my-cv.JPG" download class="btn btn2">Download CV</a> -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+            <span id="msg"></span>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyKVBeuY4Tp3qavHiie2PF5baEBBJzNQ7YBPRSXM9jte6gR_H--z2TNa6jCOE10mRAK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
                 
                 
             </section>
