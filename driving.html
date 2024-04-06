@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Chew Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <div class="header">
+        <div class="back-btn">
+            <a href="index.html#skills"><i class="fas fa-arrow-left"></i></a>        
+        </div>
+    </div>
+
+    <div class="title">
+        <h1 class="title-text">Road Object Recognition</h1>
+        <a class = "proj-btn" href="https://github.com/RyanChew1/Road-Vehicle-Recognition" target="_blank">OPEN IN GITHUB</a>
+    </div>
+    
+
+    <div class="content">
+        <h2>Purpose</h2>
+        <p>Self driving technologies rely on accurate recognition of road signs, vehichles and more.
+            This project uses computer vision to identify different types of vehichles and common objects
+            seen on the road.
+        </p>
+        <div class="images">
+            <div class="image" id="drive-img">
+                <div id="drive-img-container">
+                    <img src="images/driving-inference.png" alt="">
+                    <img src="images/driving-inference2.png" alt="">
+                    <img src="images/driving-inference3.png" alt="">
+                </div>
+                <p>Inference</p>
+            </div>
+            
+        </div>
+        
+
+        <h2>Methodology</h2>
+        <p>Three models were fine tuned on pretrained yolo models of varying sizes. Using transfer learning,
+            data was gathered into a yolo ready format. Fine tuning of learning rate and batch size was
+            applied to create the final model. Freezing 14 layers allowed faster training
+            while maintaining good accuracy. The model reached near zero f1 loss on the final yolov5m
+            model. 
+    </p>
+
+        <h2>Techniques</h2>
+        <ul class="tech">
+            <li>
+                <h3>Object Detection</h3>
+            </li>
+            <li>
+                <h3>YOLO</h3>
+            </li>
+            <li>
+                <h3>PyTorch</h3>
+            </li>
+            <li>
+                <h3>Numpy</h3>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>

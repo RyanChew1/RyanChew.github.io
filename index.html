@@ -1,409 +1,282 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home-Ryan Chew</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    </head>
-    <body class="main-content">
-
-
-
-        <!-- Navbar -->
-
-        <header class="section sec1 header active" id="home">
-            <!-- Title Screen  -->
-            <div class="title">
-                <div class="content">
-                    <h1 class="name">Ryan Chew</h1>
-                    <h2 class="job">Data Science | Machine Learning | Artificial Intelligence</h2>
-                    <h2 class="job-media"><br><br>Data Science <br><br> Machine Learning <br><br> Artificial Intelligence</h2>
-                </div>
-                
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Chew Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- navbar -->
+    <header class="header">
+        <nav id="navbar">
+            <div class="nav-links">
+                <a class="nav-item" href="#about-me-page">About Me</a>
+                <a class="nav-item" href="#projects-page">Projects</a>
+                <a class="nav-item" href="#skills-page" >Skills</a>
+                <a class="nav-item" href="#contact-page">Contact</a>
             </div>
-        </header>
+            
+        </nav>
+        
+        <i id="mobile-menu" class="fas fa-bars"></i>
+        <div class="dropdown">
+            <a href="#about-me-page">About Me</a>
+            <a href="#projects-page">Projects</a>
+            <a href="#skills-page" >Skills</a>
+            <a href="#contact-page">Contact</a>
+        </div>
 
-        <main>
-            <section class="section sec2 about" id="about">
-                <!-- ABOUT SECTION -->
-                <div class="text">
-                    <h2 class="about_header">Hey! I'm Ryan</h2>
-                <p> I am a curious and ambitious high school sophmore based in the 
-                    Bay Area. I aim to pursue a degree in Computer Science after high school and specialize
-                     in computer vision. I’m currently exploring a wide range of fields and applications, 
-                     widening my skillset and perspective along the way. So far, I have obtained 
-                     certificates from top data science and ML courses from IBM and MIT. With that 
-                     knowledge, I have completed numerous projects and even competed in two hackathons! 
-                     I am eager to learn even more and better the world through new research and the 
-                     development of practical and impactful AI solutions. When I’m not hacking, you can 
-                     find me practicing kung fu or playing piano. 
-                     <br>
-                     <br>
-                     Read about my journey below and feel 
-                     free to reach out to me if you would like to be part of it or support me!
 
-                </p>
-                </div>
-                <div class="profile">
-                    <img src="img/portfolio-pic.png" alt="Profile picture", style="border-radius: 50%;">
-                </div>
+    </header>
 
-            </section>
-            <section class="section sec4 skills" id="skills">
-                <!-- EXPERTISE SECTION -->
-                <!-- <div class="services skill-sub">
-                    <h2 class="service-header">
-                        Services
-                    </h2>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div> -->
-                <div class="expertise skill-sub">
-                    <h2 class="expertise-header">
-                        Skills
-                    </h2>
-                    <div class="skill-container">
-                        <div class="skillbox">
+    <!-- Landing Page -->
+    <section class="landing" id="about-me-page">
 
-                        
-                        <div class="skill">
-                            <div class="skill-front">
-                                <i class="fas fa-code"></i>
-                                <h2>Programming</h2>
-                            </div>
-                            <div class="skill-back">
-                                <h4>Programming</h4>
-                                <p class="skill-desc">
-                                    Python<br>
-                                    Java<br>
-                                    C++<br>
-                                    JavaScript<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skillbox">
+        <div class="name">
+            <h1 class="name_header">
+                Ryan Chew
+            </h1>
+            <h2 class="occupation">
+                Artificial Intelligence
+                <br>
+                Data Science
+            </h2>
+        </div>
 
-                        
-                        <div class="skill">
-                            <div class="skill-front">
-                                <i class="fas fa-robot"></i>
-                                <h2>Machine Learning</h2>
-                            </div>
-                            <div class="skill-back">
-                                <h4>Machine Learning</h4>
-                                <p class="skill-desc">
-                                    Regression<br>
-                                    Classification<br>
-                                    Tabular Data<br>
-                                    Time Series<br>
-                                    SK-Learn<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skillbox">    
-                    <div class="skill">
-                            <div class="skill-front">
-                                <i class="fas fa-chart-line"></i>
-                                <h2>Data Analytics</h2>
-                            </div>
-                            <div class="skill-back">
-                                <h4>Data Analytics</h4>
-                                <p class="skill-desc">
-                                    Excel<br>
-                                    SQL<br>
-                                    Pandas<br>
-                                    Statistics & Probability<br>
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="skillbox">
-                        <div class="skill">
-                            <div class="skill-front">
-                                <i class="fas fa-chart-bar"></i>
-                                <h2>Data Visualization</h2>
-                            </div>
-                            <div class="skill-back">
-                                <h4>Data Visualization</h4>
-                                <p class="skill-desc">
-                                    Statistical Visualization<br>
-                                    Matplotlib<br>
-                                    Seaborn<br>
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="skillbox">
-                        <div class="skill">
-                            <div class="skill-front">
-                                <i class="fas fa-network-wired"></i>
-                                <h2>Deep Learning</h2>
-                            </div>
-                            <div class="skill-back">
-                                <h4>Deep Learning</h4>
-                                <p class="skill-desc">
-                                    PyTorch<br>
-                                    Tensorflow<br>
-                                    Keras<br>
-                                    RNN<br>
-                                    CNN<br>
-                                    Trasnformers<br>
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="skillbox">
-                        <div class="skill">
-                            <div class="skill-front">
-                                <i class="fas fa-images"></i>
-                                <h2>Computer Vision</h2>
-                            </div>
-                            <div class="skill-back">
-                                <h4>Computer Vision</h4>
-                                <p class="skill-desc">
-                                    Image Recognition<br>
-                                    Image Segmentation<br>
-                                    Object Tracking<br>
-                                    Object Detection<br>
-                                    Generative AI Images<br>
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="skillbox">
-                        <div class="skill">
-                            <div class="skill-front">
-                                <i class="fas fa-language"></i>
-                                <h2>NLP</h2>
-                            </div>
-                            <div class="skill-back">
-                                <h4>NLP</h4>
-                                <p class="skill-desc">
-                                    Transformers<br>
-                                    Tokenizers<br>
-                                    Chatbots<br>
-                                    Sentiment Analysis<br>
+        <div class="about">
+            <h2 class="about_header">Hey! I'm Ryan!</h2>
+            <p class="about_text">
+                I am a curious and ambitious high school sophomore based in the 
+                Bay Area. I aim to pursue a degree in computer science after high school and specialize
+                in computer vision. I’m currently exploring a wide range of fields and applications, 
+                widening my skillset and perspective along the way. So far, I have obtained 
+                certificates from top data science and ML courses from IBM and MIT and a computer vision
+                course from Great Learning. With that knowledge, I have completed numerous projects and 
+                even competed in multiple hackathons! 
+                I am eager to learn even more and better the world through new research and the 
+                development of practical and impactful AI solutions. My projects typically revolve around
+                the field of medical imaging, competing regularly on Kaggle. When I’m not hacking, you can 
+                find me practicing kung fu or playing piano. 
+                <br>
+                <br>
+                Read about my journey below and feel 
+                free to reach out to me if you would like to be part of it or support me!
+            </p>
+        </div>
+        
+    </section>
 
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </section>
-            <section class="section sec3 portfolio" id="portfolio">
-                <!-- PORTFOLIO SECTION -->
-                <div class="portfolio-header-wrapper">
-                    <div class="header-div">
-                    <h2 class="portfolio-header">
-                        Projects
-                    </h2>
-                </div>
-                </div>
-                
-                <div class="projects-container">
+    <!-- Projects -->
+    <section class="projects" id="projects-page">
+        <h1 class="project-header section-header">My Projects</h1>
+        <div class="project-frame">
+             <img src="images/recording-frame.webp" alt="" class="frame">
+        <div class="project-content">
 
-                    <div class="project">
-                        <!-- ADD LINK TO PROJECT -->
-                        <a href="mnist.html"> 
-                          <img src="img\mnist-3.0.1.png" alt="">
-                           <span class="overlay-box">
-                          <span class="main-title">MNIST Digits Classification</span>
-                          <span class="description">Using MNIST dataset of numbers 1-9, 
-                            build model in TensorFlow to accurately identify.</span>
-                            </span>
-                        </a>
-                    </div>
+            <!-- Breast Cancer -->
+            <a href="breast-cancer.html" class="project-link" id="breast-cancer-project">
+                <p class="project-title">Breast Cancer Detection &nbsp; 0.83</p>
+                <img src="images/breast-cancer.png" alt="" class="breast-cancer-thumbnail">
+            </a>
+            
+            <!-- Soccer  Detection -->
+            <a href="soccer.html" class="project-link" id="soccer-project">
+                <p class="project-title">Soccer Detection &nbsp; 0.89</p>
+                <img src="images/soccer.jpg" alt="" class="soccer-thumbnail">
+            </a>
 
-                    <div class="project">
-                        <!-- ADD LINK TO PROJECT -->
-                        <a href="MovieRecProj.html"> 
-                          <img src="https://images.unsplash.com/photo-1512070679279-8988d32161be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1338&q=80" alt="">
-                           <span class="overlay-box">
-                          <span class="main-title">Movie Recommendation System</span>
-                          <span class="description">Used surprise library in Python to build a recommendation system.
-                            Took movie and user data then implemented statistical techniques such as user based, content based and matrix factorization based systems.
-                          </span>
-                            </span>
-                        </a>
-                    </div>
+            <!-- Self Driving -->
+            <a href="driving.html" class="project-link" id="driving-project">
+                <p class="project-title">Road Recognition &nbsp; 0.94</p>
+                <img src="images/driving.png" alt="" class="driving-thumbnail">
+            </a>
 
-                    <div class="project">
-                        <!-- ADD LINK TO PROJECT -->
-                        <a href="prog-proj.html"> 
-                          <img src="img/Battleship-Thumbnail.png" alt="">
-                           <span class="overlay-box">
-                          <span class="main-title">Battleships</span>
-                          <span class="description">Using Flask, built a functional two player battleship game that includes a chat feature over LAN connection. 
-                          </span>
-                            </span>
-                        </a>
-                    </div>
-
-                    <div class="project">
-                        <!-- ADD LINK TO PROJECT -->
-                        <a href="wids.html"> 
-                          <img src="https://images.unsplash.com/photo-1630260643564-7f9c9c140682?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="">
-                           <span class="overlay-box">
-                          <span class="main-title">Stanford WiDS Datathon 2023</span>
-                          <span class="description">Used XGBoost, CatBoost and LightGBM to create
-                            an ensemble model that accurately forecasts weather.
-                          </span>
-                            </span>
-                        </a>
-                    </div>
-
-                    <div class="project">
-                        <!-- ADD LINK TO PROJECT -->
-                        <a href="cifar.html"> 
-                          <img src="img/CIFAR-thumbnail.png" alt="">
-                           <span class="overlay-box">
-                          <span class="main-title">CIFAR10</span>
-                          <span class="description">Built a computer vision classification model in 
-                            tensorflow that predicts images belonging to one of ten different classes. 
-                          </span>
-                            </span>
-                        </a>
-                    </div>
-
-                    <div class="project">
-                        <!-- ADD LINK TO PROJECT -->
-                        <a href="ml-proj-real.html"> 
-                          <img src="img/Hotel Thumbnail.png" alt="">
-                           <span class="overlay-box">
-                          <span class="main-title">Hotel Cancellation Predictor</span>
-                          <span class="description">Using a dataset of customer information, built a prediction model that predicted the likelihood of a hotel's customer canceling their booking. 
-                          </span>
-                            </span>
-                        </a>
-                    </div>
-
-                </div>
-            </section>
-            <section class="section sec5 contact" id="contact">
-                <!-- CONTACT PAGE -->
-                <!-- --------------contact---------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i>chewryan0@gmail.com</p>
-                <p> <i class="fas fa-phone-square-alt"></i>+1 (669)-256-8376</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/" class="fab fa-facebook"></a>
-                    <a href="https://twitter.com/" class="fab fa-twitter-square"></a>
-                    <a href="https://instagram.com/" class="fab fa-instagram"></a>
-                    <a href="https://linkedin.com/" class="fab fa-linkedin"></a>
-                </div>
-                <!-- <a href="images/def-my-cv.JPG" download class="btn btn2">Download CV</a> -->
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="text" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div>
-            <span id="msg"></span>
+            <!-- CAC -->
+            <a href="CAC.html" class="project-link" id="cac-project">
+                <p class="project-title">Coronary Calcium Segmentation &nbsp; 0.97</p>
+                <img src="images/CAC.png" alt="" class="cac-thumbnail">
+            </a>
         </div>
     </div>
-
-</div>
-
-
-
-<script>
-
-   var tablinks = document.getElementsByClassName("tab-links");
-   var tabcontents = document.getElementsByClassName("tab-contents");
-
-   function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-   }
-
-</script>
-
-<script>
-
-    var sidemenu = document.getElementById("sidemenu")
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyKVBeuY4Tp3qavHiie2PF5baEBBJzNQ7YBPRSXM9jte6gR_H--z2TNa6jCOE10mRAK/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+       
+        
+    </section>
 
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    <!-- Skills -->
+    <section class="skills" id="skills-page">
+        <h1 class="skills-header section-header">Skills</h1>
+        <div class="expertise skill-sub">
+            <div class="skill-container">
+                <div class="skillbox">
+
+                
+                <div class="skill">
+                    <div class="skill-front">
+                        <i class="fas fa-code"></i>
+                        <h2>Programming</h2>
+                    </div>
+                    <div class="skill-back">
+                        <h4>Programming</h4>
+                        <p class="skill-desc">
+                            Python<br>
+                            R<br>
+                            Java<br>
+                            C++<br>
+                            JavaScript<br>
+                            Kotlin<br>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="skillbox">    
+            <div class="skill">
+                    <div class="skill-front">
+                        <i class="fas fa-chart-line"></i>
+                        <h2>Data Analytics</h2>
+                    </div>
+                    <div class="skill-back">
+                        <h4>Data Analytics</h4>
+                        <p class="skill-desc">
+                            Excel<br>
+                            SQL<br>
+                            Pandas<br>
+                            Statistics & Probability<br>
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="skillbox">
+                <div class="skill">
+                    <div class="skill-front">
+                        <i class="fas fa-chart-bar"></i>
+                        <h2>Data Visualization</h2>
+                    </div>
+                    <div class="skill-back">
+                        <h4>Data Visualization</h4>
+                        <p class="skill-desc">
+                            Statistical Visualization<br>
+                            Matplotlib<br>
+                            Seaborn<br>
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="skillbox">
+                <div class="skill">
+                    <div class="skill-front">
+                        <i class="fas fa-network-wired"></i>
+                        <h2>Deep Learning</h2>
+                    </div>
+                    <div class="skill-back">
+                        <h4>Deep Learning</h4>
+                        <p class="skill-desc">
+                            PyTorch<br>
+                            Tensorflow<br>
+                            Keras<br>
+                            CUDA<br>
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="skillbox">
+                <div class="skill">
+                    <div class="skill-front">
+                        <i class="fas fa-images"></i>
+                        <h2>Computer Vision</h2>
+                    </div>
+                    <div class="skill-back">
+                        <h4>Computer Vision</h4>
+                        <p class="skill-desc">
+                            Image Recognition<br>
+                            Image Segmentation<br>
+                            Object Tracking<br>
+                            Object Detection<br>
+                            Generative AI<br>
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="skillbox">
+                <div class="skill">
+                    <div class="skill-front">
+                        <i class="fas fa-language"></i>
+                        <h2>NLP</h2>
+                    </div>
+                    <div class="skill-back">
+                        <h4>NLP</h4>
+                        <p class="skill-desc">
+                            Transformers<br>
+                            Tokenizers<br>
+                            Chatbots<br>
+                        </p>
+                    </div>
+                </div>
+                </div>
                 
                 
-            </section>
-        </main>
-
-        <div class="controls-wrapper">
-            <div class="control control-1 active-btn" data-id="home">
-                <i class="fas fa-home"></i>
-            </div>
-            <div class="control control-2 "data-id="about">
-                <i class="fas fa-user"></i>
-            </div>
-            <div class="control control-3"data-id="skills">
-                <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="control control-4" data-id="portfolio">
-                <i class="fas fa-th-large"></i>
-            </div>
-            <div class="control control-5" data-id="contact">
-                <i class="fas fa-envelope-open"></i>
             </div>
         </div>
+    </section>
 
+    <!--  Contact Form -->
+    <section class="contacts" id="contact-page">
+        <h1 class="contact-header section-header">Get In Touch</h1>
+        <div id="contact">
+            <div class="contact-container">
+                <div class="row">
+                    <div class="contact-left">
+                        <p><i class="fas fa-paper-plane"></i>chewryan0@gmail.com</p>
+                        <p> <i class="fas fa-phone-square-alt"></i>+1 (669) 256-8376</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/RyanChew1" class="fab fa-github-square"></a>
+                            <a href="https://www.instagram.com/rryanchews/" class="fab fa-instagram"></a>
+                            <a href="https://www.linkedin.com/in/ryan-chew1/" class="fab fa-linkedin"></a>
+                        </div>
+                        <!-- <a href="images/def-my-cv.JPG" download class="btn btn2">Download CV</a> -->
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                    <span id="msg"></span>
+                </div>
+            </div>
         
-        <script src="app.js" async defer></script>
-    </body>
+        </div>
+    </section>
+
+
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyKVBeuY4Tp3qavHiie2PF5baEBBJzNQ7YBPRSXM9jte6gR_H--z2TNa6jCOE10mRAK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+    
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="js/app.js" async defer></script>
+</body>
 </html>
-
-

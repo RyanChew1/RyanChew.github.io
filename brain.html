@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Chew Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <div class="header">
+        <div class="back-btn">
+            <a href="index.html#skills"><i class="fas fa-arrow-left"></i></a>        
+        </div>
+    </div>
+
+    <div class="title">
+        <h1 class="title-text">Brain Tumor Segmentation and Classification</h1>
+        <a class = "proj-btn" href="https://github.com/RyanChew1/OCR" target="_blank">OPEN IN GITHUB</a>
+    </div>
+    
+
+    <div class="content">
+        <h2>Purpose</h2>
+        <p>Optical character recognition is used in many everyday technologies, for real world 
+            machine translation, for real world text to speech, for scanning files and more. 
+            This project uses convolutional neural networks to identify characters. 
+        </p>
+        <div class="images">
+            <div class="image">
+                <img src="images/breast-cancer-tf.png" alt="">
+                <p>TensorFlow Model</p>
+            </div>
+
+            <div class="image">
+                <img src="images/breast-cancer-torch.png" alt="">
+                <p>PyTorch Model</p>
+            </div>
+            
+        </div>
+        
+
+        <h2>Methodology</h2>
+        <p>One UNET was built in Tensorflow and Keras, the architecture contains 2 - 3x3 
+            convolutional layers per block and uses 5 blocks on both the contracting and 
+        expanding path to get the image into a latent space with dimension 256. The model also
+        used a batch size of 32 and trained for 10 epochs. 
+        Using BCE Dice loss the model achieved 0.9 validation accuracy.<br><br>
+        The other UNET was built in PyTorch, I experimented with many loss functions including
+        dice, BCE dice, BCE, focal loss and Tversky loss. I also tuned the model with hyperparameter
+        grids to achieve higher accuracy. The optimized model ended up bringing the image to 1024 dimensions
+        in latent space before the expanding path. The best loss function was binary cross entropy which resulted
+        in roughly 0.4 dice loss during testing. <br><br>
+
+        Both models used Adam or AdamW in training and used reduce learning on plateau 
+        for the LR scheduler. 
+    </p>
+
+        <h2>Techniques</h2>
+        <ul class="tech">
+            <li>
+                <h3>Optical Character Recognition</h3>
+            </li>
+            <li>
+                <h3>TensorFlow</h3>
+            </li>
+            <li>
+                <h3>Keras</h3>
+            </li>
+            <li>
+                <h3>Numpy</h3>
+            </li>
+            <li>
+                <h3>Convolutional Neural Network</h3>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>

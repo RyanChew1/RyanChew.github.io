@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Chew Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <div class="header">
+        <div class="back-btn">
+            <a href="index.html#skills"><i class="fas fa-arrow-left"></i></a>        
+        </div>
+    </div>
+
+    <div class="title">
+        <h1 class="title-text">Soccer Player Position Detection</h1>
+        <a class = "proj-btn" href="https://github.com/RyanChew1/OCR" target="_blank">OPEN IN GITHUB</a>
+    </div>
+    
+
+    <div class="content">
+        <h2>Purpose</h2>
+        <p>In many soccer games, statistics are hard to track manually. With the introduction of the VAR system,
+            officiating in soccer games have improved drastically in accuracy. Player location detection will 
+            provide more accurate and advanced metrics. 
+        </p>
+        <div class="images">
+            <div class="image">
+                <img src="images/soccer_inference.png" alt="">
+                <p>Video Inference Frame</p>
+            </div>
+
+            <div class="image">
+                <img src="images/val_batch2_pred.jpg" alt="">
+                <p>Image Inference</p>
+            </div>
+            
+        </div>
+        
+
+        <h2>Methodology</h2>
+        <p>Data was collected off public datasets from SoccerNet. The data came in json format with individual
+            images that form videos when stitched together. The labels provided the class and the pixel location
+            of each object. The object consists of players, referees and goalkeepers. In this project, I 
+            manipulated the data into a yolo format using "class x y w h". Then, I imported the yolov8m model
+            and ran the model using multiple different hyperparameters. In the end, the model achieved 0.07 mAP loss. 
+
+    </p>
+
+        <h2>Techniques</h2>
+        <ul class="tech">
+            <li>
+                <h3>Object Detection</h3>
+            </li>
+            <li>
+                <h3>YOLO</h3>
+            </li>
+            <li>
+                <h3>Computer Vision</h3>
+            </li>
+            <li>
+                <h3>PyTorch</h3>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
