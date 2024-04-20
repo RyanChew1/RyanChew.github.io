@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Chew Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <div class="header">
+        <div class="back-btn">
+            <a href="index.html#skills"><i class="fas fa-arrow-left"></i></a>        
+        </div>
+    </div>
+
+    <div class="title">
+        <h1 class="title-text">PERSONAL FITNESS COMPANION</h1>
+        <a class = "proj-btn" href="https://github.com/RyanChew1/FIT.LY" target="_blank">OPEN IN GITHUB</a>
+    </div>
+    
+
+    <div class="content">
+        <h2>Purpose</h2>
+        <p>
+            Recently getting into weight training and starting to lift more, I came to a realization that
+             many people are intimidated or afraid to start exercising. Exercise and fitness is an 
+             essential part of maintaining one's physical and mental well-being, but the motivation 
+             to start is often not there or could seem out of reach. Fit.ly is designed to welcome 
+             people to start living healthier lifestyles and begin their fitness journey.
+
+             <br>
+             <br>
+             There are two essential components of Fit.ly, a rep tracker and a workout generator. 
+             The Rep tracker uses movement and pose detection to count reps, ensuring a correct and
+              full range of motion on each exercise. The second feature is a workout generator. Many
+               people don't stick to a plan or find it hard to get a good workout plan. Listening to 
+               people online for guidance is useful but often overwhelming. Truth is, each person's 
+               workout plan should be tailored to their goals and circumstances. The workout generator
+                allows users to input several parameters to generate a personalized seven-day workout 
+                plan.
+        </p>
+        <div class="images">
+            <div class="image">
+                <img src="images/Rep Counter.png" alt="">
+                <p>Rep Counter</p>
+            </div>
+            <div class="image">
+                <img src="images/Workout Generator.png" alt="">
+                <p>Workout Generator</p>
+            </div>
+            <div class="image">
+                <img src="images/Generated Workout.png" alt="">
+                <p>Generated Workout</p>
+            </div>
+            
+        </div>
+        
+
+        <h2>Methodology</h2>
+        <p>
+            The entire application is built with Streamlit, including all forms, buttons, inputs, 
+            video outputs, and more. Everything was written with python, with Jupyter notebooks exported 
+            into python scripts.
+        The rep counter was built off of a foundational YOLv8Pose model, fine-tuning was used on another 
+        dataset but was not used due to little improvement in accuracy. I then implemented a non-maximum
+        suppression and used both confidence and filter by area to ensure only the subject will be counter.
+         This ensures that people in the background will not interfere with the rep count. In order to 
+         count reps, I determined the angle between different keypoints. For instance, I used the 
+         shoulder, elbow and hand to determine what state of a curl they are in. I also didn't count 
+         bad reps such as a bent arm in lateral raises using the same idea. Angles can be tweaked to 
+         give more or less leeway.
+    </p>
+
+        <h2>Techniques</h2>
+        <ul class="tech">
+            <li>
+                <h3>Streamlit</h3>
+            </li>
+            <li>
+                <h3>PyTorch</h3>
+            </li>
+            <li>
+                <h3>OpenCV</h3>
+            </li>
+            <li>
+                <h3>YOLO</h3>
+            </li>
+            <li>
+                <h3>GEMMA</h3>
+            </li>
+            <li>
+                <h3>Beautiful Soup</h3>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
