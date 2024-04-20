@@ -372,7 +372,7 @@ section {
 
 // Breast Cancer
 #breast-cancer-project{
-    top: 17vh;
+    top: 30vh;
     left: 23vw;
 
     img{
@@ -388,7 +388,7 @@ section {
 
 // Transformer
 #soccer-project{
-    top: 5vh;
+    top: 15vh;
     left: 60vw;
 
     img{
@@ -404,7 +404,7 @@ section {
 
 // Self Driving
 #driving-project{
-    top: -35vh;
+    top: 13vh;
     left: 78vw;
 
     img{
@@ -420,8 +420,23 @@ section {
 
 // CAC
 #cac-project{
-    top: -25vh;
+    top: -20vh;
     left: 40vw;
+
+    img{
+        border-color: rgb(101, 15, 124);
+        max-width: 20vw;
+        max-height: 30vh;
+    }
+    
+    .project-title{
+        background-color: rgb(101, 15, 124);
+    }
+}
+
+#fitly-project{
+    top: -30vh;
+    left: 20vw;
 
     img{
         border-color: rgb(101, 15, 124);

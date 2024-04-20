@@ -347,7 +347,7 @@ nav a {
 }
 
 #breast-cancer-project {
-  top: 17vh;
+  top: 30vh;
   left: 23vw;
 }
 #breast-cancer-project img {
@@ -360,7 +360,7 @@ nav a {
 }
 
 #soccer-project {
-  top: 5vh;
+  top: 15vh;
   left: 60vw;
 }
 #soccer-project img {
@@ -373,7 +373,7 @@ nav a {
 }
 
 #driving-project {
-  top: -35vh;
+  top: 13vh;
   left: 78vw;
 }
 #driving-project img {
@@ -386,7 +386,7 @@ nav a {
 }
 
 #cac-project {
-  top: -25vh;
+  top: -20vh;
   left: 40vw;
 }
 #cac-project img {
@@ -395,6 +395,19 @@ nav a {
   max-height: 30vh;
 }
 #cac-project .project-title {
+  background-color: rgb(101, 15, 124);
+}
+
+#fitly-project {
+  top: -30vh;
+  left: 20vw;
+}
+#fitly-project img {
+  border-color: rgb(101, 15, 124);
+  max-width: 20vw;
+  max-height: 30vh;
+}
+#fitly-project .project-title {
   background-color: rgb(101, 15, 124);
 }
 
